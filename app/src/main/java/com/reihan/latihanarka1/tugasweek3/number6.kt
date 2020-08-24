@@ -8,7 +8,7 @@ fun luasLingkaran(r: Int){
         println("Hasil Luas Lingkaran adalah $luas")
     } else {
         luas = 3.14.toInt() * r * r
-        println("Hasil Luas Lingkaran adalah $luas")
+        println("Hasil Luas Lingkaran adalah ${luas.toDouble()}")
     }
 }
 

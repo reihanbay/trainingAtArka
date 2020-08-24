@@ -31,7 +31,7 @@ fun main(){
     if (rata <= 70){
         println("Grade D")
     } else
-    if (rata <= 60){
+    if (rata <= 60 || rata == 0){
         println("Grade E")
     }
 }

@@ -1,11 +1,11 @@
 package com.reihan.latihanarka1.tugasweek3
 
-fun divideAndSort(deret: Int){
+fun divideAndSort(deret: Long){
     var bilangan = deret.toString()
     var x = bilangan.split("0")
     var arr = x.size-1
     while (arr>=0){
-        var output = x[arr].map { it.toString().toInt() }.sorted().reversed()
+        var output = x[arr].map { it.toString().toLong() }.sorted().reversed()
         var longIndex= output.size -1
 
         while(longIndex>=0){
@@ -19,7 +19,7 @@ fun divideAndSort(deret: Int){
 fun main(){
     println("Divide And Sort")
     print("Masukan Angka : ")
-    divideAndSort(readLine()!!.toInt())
+    divideAndSort(readLine()!!.toLong())
 //    var deret = 1212120222333.toString()
 //    var b = deret.split("0")
 //    var n= b.size -1
