@@ -4,6 +4,8 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import com.reihan.latihanarka1.drawer.SimpleDrawerActivity
+import com.reihan.latihanarka1.toolbar.SimpleToolbarActivity
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -16,11 +18,12 @@ class MainActivity : AppCompatActivity() {
         val btnActLl= findViewById<Button>(R.id.activity_LL)
         val btnActRl= findViewById<Button>(R.id.activity_RL)
         val btnActCl= findViewById<Button>(R.id.activity_CL)
+        val btnActTool= findViewById<Button>(R.id.activity_toolbar)
 
 
 
         btnActivityA.setOnClickListener{
-            val intentA = Intent(this, activity_one::class.java)
+            val intentA = Intent(this, SimpleDrawerActivity::class.java)
             intentA.putExtra("domainName","arkademy.com")
             startActivity(intentA)
         }
@@ -47,6 +50,10 @@ class MainActivity : AppCompatActivity() {
         btnActCl.setOnClickListener{
             val intentCl = Intent(this, ConstraintLayoutActivity::class.java)
             startActivity(intentCl)
+        }
+        btnActTool.setOnClickListener{
+            val intentTool = Intent(this, SimpleToolbarActivity::class.java)
+            startActivity(intentTool)
         }
     }
 }

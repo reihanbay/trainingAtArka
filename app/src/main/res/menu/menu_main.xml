@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_to_second_activity"
+        android:title="to Fragment Activity"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_to_show_toast"
+        android:title="to Second Activity"
+        android:icon="@mipmap/ic_launcher"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_to_data_binding"
+        android:title="to Data Binding"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_to_dialog"
+        android:title="to Dialog"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_to_tabpager"
+        android:title="to TabL and VPager"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_to_webview"
+        android:title="to Webview"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_to_recycle"
+        android:title="to Recycle"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_to_shared"
+        android:title="to Shared"
+        app:showAsAction="never"/>
+</menu>

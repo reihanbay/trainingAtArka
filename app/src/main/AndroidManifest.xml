@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.reihan.latihanarka1">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,7 +12,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ConstraintLayoutActivity"></activity>
+        <activity android:name=".sharedpref.LearnSharedPrefActivity"></activity>
+        <activity android:name=".recycleview.SimpleRecycleViewActivity" />
+        <activity android:name=".webview.SimpleWebViewActivity" />
+        <activity android:name=".dialog.SimpleDialogActivity" />
+        <activity android:name=".databinding.SimpleDataBindingActivity" />
+        <activity android:name=".fragment.SimpleFragmentActivity" />
+        <activity
+            android:name=".drawer.SimpleDrawerActivity"
+            android:label="@string/title_activity_simple_drawer"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".tabpager.SimpleTabPagerActivity" />
+        <activity
+            android:name=".toolbar.SimpleToolbarActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ConstraintLayoutActivity" />
         <activity android:name=".RelativeLayoutActivity" />
         <activity android:name=".FrameLayoutActivity" />
         <activity android:name=".LinearLayoutActivity" />
