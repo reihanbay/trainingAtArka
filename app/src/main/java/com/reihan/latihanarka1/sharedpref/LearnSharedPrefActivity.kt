@@ -21,11 +21,11 @@ class LearnSharedPrefActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_learn_shared_pref)
 
-//        val sharedPref = applicationContext.getSharedPreferences(SHARED_PREFERENCES_NAME, Context.MODE_PRIVATE)
+        val sharedPref = applicationContext.getSharedPreferences(SHARED_PREFERENCES_NAME, Context.MODE_PRIVATE)
         val defaultSharedPref = androidx.preference.PreferenceManager.getDefaultSharedPreferences(this)
 
         binding.btnUpdateEmail.setOnClickListener {
-            defaultSharedPref.edit().putString(KEY_EMAIL, "rei@gmail.com")
+            defaultSharedPref.edit().putString(KEY_EMAIL, "rei@gmail.com").apply()
 
         binding.tvEmail.text = defaultSharedPref.getString(KEY_EMAIL, ".../")
         }

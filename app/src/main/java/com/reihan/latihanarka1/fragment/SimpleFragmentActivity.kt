@@ -23,6 +23,7 @@ class SimpleFragmentActivity : AppCompatActivity(), FragmentA.AListener {
             val AFragment = FragmentA(this)
             val bundle = Bundle()
             bundle.putString(FragmentA.EXTRA_INFO, "Argument A")
+            bundle.putString(FragmentA.INFO, "argumenb")
             AFragment.arguments = bundle
             supportFragmentManager.beginTransaction().replace(R.id.fl_container, AFragment).commit()
         }

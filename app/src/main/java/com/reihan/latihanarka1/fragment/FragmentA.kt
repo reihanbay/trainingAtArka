@@ -14,6 +14,7 @@ class FragmentA(private val listener: AListener? ) : Fragment() {
 
     companion object{
         const val EXTRA_INFO = "EXTRA_INFO"
+        const val INFO = "INFO"
     }
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -28,6 +29,7 @@ class FragmentA(private val listener: AListener? ) : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         val infoA = arguments?.getString(EXTRA_INFO, "Fragment A")
+        val infob = arguments?.getString(INFO, "FragmentC")
         rootView.findViewById<TextView>(R.id.tv_title_a).text = infoA
         val btnChangeA = rootView.findViewById<Button>(R.id.btn_info_a)
         btnChangeA.setOnClickListener{
