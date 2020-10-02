@@ -12,7 +12,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".sharedpref.LearnSharedPrefActivity"></activity>
+        <activity android:name=".room.AddWordActivity" />
+        <activity android:name=".room.WordListActivity" />
+        <activity android:name=".sharedpref.LearnSharedPrefActivity" />
         <activity android:name=".recycleview.SimpleRecycleViewActivity" />
         <activity android:name=".webview.SimpleWebViewActivity" />
         <activity android:name=".dialog.SimpleDialogActivity" />

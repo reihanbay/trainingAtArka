@@ -9,7 +9,6 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.widget.Toolbar
 import com.reihan.latihanarka1.R
-import com.reihan.latihanarka1.activity_two
 import com.reihan.latihanarka1.databinding.SimpleDataBindingActivity
 import com.reihan.latihanarka1.dialog.SimpleDialogActivity
 import com.reihan.latihanarka1.fragment.SimpleFragmentActivity
